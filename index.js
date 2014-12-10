@@ -1,1 +1,3 @@
-asd
+'use strict';
+
+angular.module('magicmirror', []);

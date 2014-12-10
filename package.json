@@ -1,0 +1,9 @@
+{
+  "name": "magicmirror",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "tourism": "0.9.4"
+  }
+}

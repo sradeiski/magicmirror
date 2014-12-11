@@ -1,1 +1,6 @@
+#generated folders
 node_modules
+build
+
+#generated files
+npm-debug.log

@@ -6,11 +6,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
   </head>
-  <body ng-app="magicMirrorApp">
-    <div class="container">
-      <div ng-view=""></div>
+  <body ng-app="magicmirror">
+    <div ng-controller="WeatherController as weather">
+      {{ weather.config.today.url }}
     </div>
-    <script src="node_modules/angular/angular.min.js"></script>
+    <div ng-controller="MotivationalController as motivational">
+      {{ motivational.motivational }}
+    </div>
+    <script src="node_modules/angular/angular.js"></script>
     <script src="build/build.js"></script>
   </body>
 </html>

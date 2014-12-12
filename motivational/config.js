@@ -1,12 +1,18 @@
 'use strict';
 
-var motivational;
-
 // ============================= //
 // edit motivational config here //
 // ============================= //
-motivational = {};
-
-module.exports = {
-  motivational: motivational
+var motivational = {
+  entries: [
+    'You look great, today!',
+    'Be bold.',
+    '123',
+    'asdasd',
+    'aoisdjadoij',
+    'sadf asdosdn adsasd',
+    '823jis'
+  ]
 };
+
+module.exports = motivational;

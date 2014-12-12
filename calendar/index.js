@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function () {
+module.exports = angular.module('magicmirror.calendar', [])
 
-};
+  .controller('CalendarController', [ '$interval', require('./CalendarController') ]);

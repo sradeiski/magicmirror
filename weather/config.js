@@ -1,11 +1,9 @@
 'use strict';
 
-var weather;
-
 // ======================== //
 // edit weather config here //
 // ======================== //
-weather = {
+var config = {
   today: {
     url: 'http://api.openweathermap.org/data/2.5/weather',
     params: {
@@ -56,6 +54,4 @@ weather = {
   }
 };
 
-module.exports = {
-  weather: weather
-};
+module.exports = config;

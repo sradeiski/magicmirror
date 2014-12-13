@@ -2,9 +2,6 @@
 
 var config = require('./config');
 
-var Client = require('node-rest-client').Client;
-var restClient = new Client();
-
 var getWeatherForecast,
     getWeatherToday,
     handleError,

@@ -4,7 +4,7 @@
 // edit clock config here //
 // ====================== //
 var config = {
-  timeFormat: 'H:mm',
+  timeFormat: 'H:MM',
   refreshIntervalInSeconds: 10
 };
 

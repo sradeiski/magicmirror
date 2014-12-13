@@ -1,9 +1,9 @@
 'use strict';
 
-var getTime;
-
-getTime = function () {};
+var getCurrentTime = function () {
+  return new Date();
+};
 
 module.exports = {
-  getTime: getTime
+  getCurrentTime: getCurrentTime
 };

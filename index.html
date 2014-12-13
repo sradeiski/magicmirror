@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width">
   </head>
   <body ng-app="magicmirror">
+    <!-- ================== clock start ================== -->
+    <div id="widget_clock" ng-controller="ClockController as clock">
+      {{ clock.currentTime }}<!--  | amDateFormat:'HH:mm'}} -->
+    </div>
+    <!-- ================== clock end ================== -->
     <div ng-controller="WeatherController as weather">
       {{ weather.config.today.url }}
     </div>
     <div ng-controller="MotivationalController as motivational">
       {{ motivational.motivational }}
     </div>
+    <button ng-click="">Refresh</button>
     <script src="node_modules/angular/angular.js"></script>
     <script src="build/build.js"></script>
   </body>

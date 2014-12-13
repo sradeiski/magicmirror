@@ -1,22 +1,23 @@
 'use strict';
 
-var clockService = require('./ClockService');
+var clockService = require('./ClockService'),
+    config = require('./config');
+
 var dateformat = require('dateformat');
 
 var ClockController = function ($interval) {
   var getFormattedTime,
-      refreshInterval = 10 * 1000,
       that = this;
 
   getFormattedTime = function () {
-    return dateformat(clockService.getCurrentTime(), 'H:mm');
+    return dateformat(clockService.getCurrentTime(), config.timeFormat);
   };
 
   that.currentTime = getFormattedTime();
 
   $interval(function () {
     that.currentTime = getFormattedTime();
-  }, refreshInterval);
+  }, config.refreshIntervalInSeconds * 1000);
 };
 
 module.exports = ClockController;

@@ -2,4 +2,4 @@
 
 module.exports = angular.module('magicmirror.weather', [])
 
-  .controller('WeatherController', [ '$interval', require('./WeatherController') ]);
+  .controller('WeatherController', [ '$http', require('./WeatherController') ]);

@@ -2,13 +2,16 @@
 
 var config = require('./config');
 
+var Client = require('node-rest-client').Client;
+var restClient = new Client();
+
 var getWeatherForecast,
     getWeatherToday,
     handleError,
     handleSuccess;
 
 handleError = function (response) {
-  // TO DO ERROR HANDLING
+  console.error(response);
   return response;
 };
 
@@ -20,10 +23,10 @@ getWeatherToday = function ($http) {
   var requestToday = $http({
     method: 'get',
     params: {
-      lang: config.today.lang,
-      mode: config.today.mode,
-      q: config.today.cityAndCountry,
-      units: config.today.units
+      lang: config.today.params.lang,
+      mode: config.today.params.mode,
+      q: config.today.params.cityAndCountry,
+      units: config.today.params.units
     },
     url: config.today.url
   });
@@ -35,10 +38,10 @@ getWeatherForecast = function ($http) {
   var requestForecast = $http({
     method: 'get',
     params: {
-      lang: config.forecast.lang,
-      mode: config.forecast.mode,
-      q: config.forecast.cityAndCountry,
-      units: config.forecast.units
+      lang: config.forecast.params.lang,
+      mode: config.forecast.params.mode,
+      q: config.forecast.params.cityAndCountry,
+      units: config.forecast.params.units
     },
     url: config.forecast.url
   });
@@ -47,7 +50,6 @@ getWeatherForecast = function ($http) {
 };
 
 module.exports = {
-  config: config,
   getWeatherForecast: getWeatherForecast,
   getWeatherToday: getWeatherToday
 };

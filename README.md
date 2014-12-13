@@ -4,7 +4,7 @@ AngularJS-based project inspired by this cool project: https://github.com/MichMi
 
 This project is in a very rudimentary stage. 
 
-## Planned next steps: 
+## Planned next steps 
 * Finish implementation of 'weather' module. 
 * Implement 'calendar' module (extract data from ical). 
 * Implement 'news' module (for tech news and world news). 

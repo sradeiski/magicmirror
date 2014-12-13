@@ -1,6 +1,6 @@
 #magicmirror
 
-AngularJS-based project inspired by this cool project: https://github.com/MichMich/MagicMirror
+Node/AngularJS-based RaspberryPi project inspired by this cool project: https://github.com/MichMich/MagicMirror. 
 
 This project is in a very rudimentary stage. 
 
@@ -9,6 +9,9 @@ This project is in a very rudimentary stage.
 * Implement 'calendar' module (extract data from ical). 
 * Implement 'news' module (for tech news and world news). 
 * Styling (css or less?) 
+* Add second HTML page with ability to modify configuration easily. 
+* (Maybe in separate project) Add music player module for magic mirrors with speakers - including another HTML page for controlling music playback. 
+* (Maybe in seperate project) Create script to run a nodejs server to serve this website and start browser on RaspberryPi automatically. 
 
 ## Log
 

@@ -16,12 +16,12 @@
     <div ng-controller="WeatherController as weather">
       <h2>Today's weather in Stuttgart, Germany</h2>
       <ul>
-        <li>description: {{ weather.today.description }}</li>
         <li>icon: {{ weather.today.icon }}</li>
+        <li>description: {{ weather.today.description }}</li>
         <li>sunset time: {{ weather.today.sunset }}</li>
         <li>current temperature: {{ weather.today.temp }}</li>
-        <li>today's high: {{ weather.today.temp_max }}</li>
-        <li>today's low: {{ weather.today.temp_min }}</li>
+        <li>today's high: {{ weather.today.tempMax }}</li>
+        <li>today's low: {{ weather.today.tempMin }}</li>
         <li>wind speed: {{ weather.today.windspeed }}</li>
       </ul>
       <h2>This week's weather in Stuttgart, Germany</h2>

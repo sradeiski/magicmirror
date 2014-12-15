@@ -47,6 +47,7 @@ getWeatherForecast = function ($http) {
 };
 
 module.exports = {
+  config: config,
   getWeatherForecast: getWeatherForecast,
   getWeatherToday: getWeatherToday
 };

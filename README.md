@@ -10,7 +10,7 @@ This project is in a very rudimentary stage.
 ## Planned next steps 
 * Implement 'calendar' module (extract data from ical). 
 * Implement 'news' module (for tech news and world news). 
-* Implement clock skin like this: http://www.qlocktwo.com
+* Integrate this: http://codepen.io/FWeinb/pen/oyACz
 * Styling (css or less?) 
 * Add second HTML page with ability to modify configuration easily. 
 * (Maybe in separate project) Add music player module for magic mirrors with speakers - including another HTML page for controlling music playback. 

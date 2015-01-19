@@ -4,3 +4,6 @@ build
 
 #generated files
 npm-debug.log
+
+#other files
+MagicMirror.txt

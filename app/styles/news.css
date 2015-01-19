@@ -1,0 +1,22 @@
+/* news style definition */
+
+#widget_news_world {
+  margin-top: 20px;	
+}
+
+#widget_news_developer {
+  margin-top: 20px;	
+}
+
+.widget_news_title {
+  font-family: "LocalRoboto-Black";
+  font-size: 60%;
+  letter-spacing: 7px;
+  opacity: 0.75;
+  text-align: right;
+  padding-bottom: 7px;
+}
+.widget_news_item {
+  font-family: "LocalRoboto-Thin";
+  font-size: 40%;
+}

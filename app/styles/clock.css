@@ -1,0 +1,7 @@
+/* clock style definition */
+
+#widget_clock {
+  font-family: "LocalRoboto-Thin";
+  font-size: 250%;
+  text-align: center;
+}

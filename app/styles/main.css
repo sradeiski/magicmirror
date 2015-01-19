@@ -1,0 +1,101 @@
+/* === global styles === */
+body, html {
+  background: #000;
+  padding: 0px;
+  margin: 0px;
+  width:100%;
+  height: 100%;
+
+  letter-spacing: 0px;
+  color: #fff;
+  font-size: 25pt;
+   -webkit-font-smoothing: antialiased;
+}
+
+.dimmed {
+  opacity: 0.5;
+}
+
+#weather_box {
+  margin-top: 10px;
+}
+
+.width_fivePercent      { width:  5%; }
+.width_tenPercent       { width: 10%; }
+.width_fifteenPercent   { width: 15%; }
+.width_twentyPercent    { width: 20%; }
+.width_twentyfivePercent{ width: 25%; }
+.width_thirtyPercent    { width: 30%; }
+.width_fortyPercent     { width: 40%; }
+
+/* === widget styles === */
+
+#widget_motivation {
+  font-family: "LocalRoboto-Regular";
+  font-size: 100%;
+}
+
+/* === widget positions === */
+
+.width_box {
+  width: 30%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.clearer {
+  clear: left;
+}
+
+.widget_align_bottom_center {
+  width: 90%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+.horizontal_separator {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+hr {
+  border: dashed 1px;
+  border-color: #444;
+}
+
+/* === font definitions === */
+
+@font-face {
+  font-family: LocalRoboto-Black;
+  src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: LocalRoboto-Bold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: LocalRoboto-Thin;
+  src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: LocalRoboto-ThinItalic;
+  src: url(fonts/Roboto-ThinItalic.ttf);
+}
+@font-face {
+  font-family: LocalRoboto-Medium;
+  src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: LocalRoboto-Italic;
+  src: url(fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: LocalRoboto-Regular;
+  src: url(fonts/Roboto-Regular.ttf);
+}

@@ -4,7 +4,7 @@ var tourism = require('tourism');
 
 module.exports = tourism({
   analyse: {
-    client: [ '**/*.js', '!node_modules/**/*.js', '!build/**/*.js' ]
+    client: [ '**/*.js', '!node_modules/**/*.js', '!build/**/*.js', '!app/qlocktwo/**/*.js' ]
   },
   test: {
     client: [ 'test/**/*.js' ]

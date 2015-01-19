@@ -1,0 +1,19 @@
+/* calendar style definition */
+
+#widget_calendar_today {
+	margin-top: 20px;
+}
+
+.widget_calendar_table {
+	width: 100%;
+}
+
+.widget_calendar_title {
+  font-family: "LocalRoboto-Thin";
+  font-size: 70%;
+}
+
+.widget_calendar_event {
+  font-family: "LocalRoboto-ThinItalic";
+  font-size: 40%;
+}

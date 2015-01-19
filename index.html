@@ -3,42 +3,70 @@
   <head>
     <meta charset="utf-8">
     <title>Magic Mirror</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="app/styles/calendar.css">
+    <link rel="stylesheet" type="text/css" href="app/styles/clock.css">
+    <link rel="stylesheet" type="text/css" href="app/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="app/styles/news.css">
+    <link rel="stylesheet" type="text/css" href="app/styles/weather.css">
+    <link rel="stylesheet" type="text/css" href="app/styles/weather-icons.css">
   </head>
   <body ng-app="magicmirror">
-    <h1>Magic Mirror</h1>
-    <!-- ================== clock start ================== -->
-    <div id="widget_clock" ng-controller="ClockController as clock">
-      <p>The current time is: {{ clock.currentTime }}</p>
+    <!-- float left -->
+    <div class="width_box left">
+      <!-- ================== clock start ================== -->
+      <!-- clock -->
+      <!-- ================== clock start ================== -->
+      <div id="widget_clock" ng-controller="ClockController as clock">
+        <p>{{ clock.currentTime }}</p>
+      </div>
+      <!-- ================== clock end ================== -->
+
+      <!-- ================== weather start ================== -->
+      <div id="weather_box" ng-controller="WeatherController as weather">
+        
+        <!-- wind & sunset today -->
+        <div id="widget_weather_today" class="widget_weather">
+          <div id="weather_topbar">
+            <div id="weather_today_wind_speed" class="left">{{ weather.today.windspeed }}</div>
+            <div id="weather_today_wind_icon" class="left wi wi-strong-wind dimmed"></div>
+            <div id="weather_today_sunset_icon" class="left icon wi wi-sunset dimmed"></div>
+            <div id="weather_today_sunset_time" class="left">{{ weather.today.sunset }}</div>
+          </div>
+          <br />
+          <!-- weather today -->
+          <table class="weathertable">
+            <tr>
+              <td rowspan="2"><div id="weathericon_big" class="icon dimmed wi" ng-class=weather.today.icon></div></td>
+              <td rowspan="2"><div id="weather_temperature_big" class="widget_weather_temperature_big">{{ weather.today.temp }}°</div></td>
+              <td><div class="widget_weather_temperature_small">{{ weather.today.tempMin }}° / {{ weather.today.tempMin }}°</div></td>
+            </tr>
+            <tr>
+              <td><div class="widget_weather_text_big">{{ weather.today.description }}</div></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- weather forecast -->
+        <div id="widget_weather_forecast" class="widget_weather">
+          <table ng-repeat="forecast in weather.forecast" class="weatherforecasttable">
+            <tr>
+              <td class="widget_weather_forecast_field weather_day dimmed">{{ forecast.daystring }}</td>
+              <td class="widget_weather_forecast_field">{{ forecast.temperatureDay }}°</td>
+              <td class="widget_weather_forecast_field dimmed">{{ forecast.temperatureLow }}°</td>
+              <td class="widget_weather_forecast_field dimmed">{{ forecast.temperatureHigh }}°</td>
+              <td class="widget_weather_forecast_field icon dimmed wi" ng-class=forecast.icon></td>
+              <td class="widget_weather_text">{{ forecast.description }}</td>
+            </tr>
+          </table> 
+        </div>
+      </div>
     </div>
-    <!-- ================== clock end ================== -->
-    <div ng-controller="WeatherController as weather">
-      <h2>Today's weather in Stuttgart, Germany</h2>
-      <ul>
-        <li>icon: {{ weather.today.icon }}</li>
-        <li>description: {{ weather.today.description }}</li>
-        <li>sunset time: {{ weather.today.sunset }}</li>
-        <li>current temperature: {{ weather.today.temp }}</li>
-        <li>today's high: {{ weather.today.tempMax }}</li>
-        <li>today's low: {{ weather.today.tempMin }}</li>
-        <li>wind speed: {{ weather.today.windspeed }}</li>
-      </ul>
-      <h2>This week's weather in Stuttgart, Germany</h2>
-      <table ng-repeat="forecast in weather.forecast">
-        <tr>
-          <td>day: {{ forecast.daystring }}</td>
-          <td>day temperature: {{ forecast.temperatureDay }}°</td>
-          <td>day low: {{ forecast.temperatureLow }}°</td>
-          <td>day high: {{ forecast.temperatureHigh }}°</td>
-          <td>day icon: {{ forecast.icon }}</td>
-          <td>description: {{forecast.description}}</td>
-        </tr>
-      </table> 
-    </div>
-    <div ng-controller="MotivationalController as motivational">
-      <h2>{{ motivational.motivational }}</h2>
-    </div>
+    <!-- ================== weather end ================== -->
+    
+    <!-- ============== motivational start =============== -->
+    <div id="widget_motivation" class="widget_align_bottom_center" ng-controller="MotivationalController as motivational">{{ motivational.motivational }}</div>
+    <!-- ============== motivational end =============== -->
+
     <script src="node_modules/angular/angular.js"></script>
     <script src="build/build.js"></script>
   </body>

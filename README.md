@@ -8,6 +8,7 @@ Node/AngularJS-based RaspberryPi project inspired by this cool project: https://
 This project is in a very rudimentary stage. 
 
 ## Planned next steps 
+* Come up with strategy for front-end (extend plugin idea).
 * Implement 'calendar' module (extract data from ical). 
 * Implement 'news' module (for tech news and world news). 
 * Integrate this: http://codepen.io/FWeinb/pen/oyACz
@@ -17,6 +18,9 @@ This project is in a very rudimentary stage.
 * (Maybe in seperate project) Create script to run a nodejs server to serve this website and start browser on RaspberryPi automatically. 
 
 ## Log
+
+#### January 19th
+Winter break is over. Added some styling to give an idea of what things may look like.
 
 #### December 13th 
 Simple modules 'clock', 'motivational', and 'weather' implemented and their results are displayed on a rudimentary html page. 

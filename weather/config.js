@@ -51,7 +51,8 @@ var config = {
     Friday: 'fr',
     Saturday: 'sa',
     Sunday: 'so'
-  }
+  },
+  timeFormat: 'H:MM'
 };
 
 module.exports = config;

@@ -1,0 +1,83 @@
+/* weather style definition */
+
+.widget_weather {
+  margin-top: 20px;	
+  width: 100%;
+  font-family: "LocalRoboto-Thin";
+}
+
+#weather_topbar {
+	padding-left: 25%;
+	font-size: 60%;
+}
+
+#weather_today_wind_icon, #weather_today_sunset_icon {
+	zoom: 0.8;
+}
+
+#weather_today_wind_icon {
+	padding-right: 10%;
+}
+
+#weather_today_wind_speed, #weather_today_sunset_icon {
+	padding-right: 3%;
+}
+
+#widget_weather_forecast {
+	zoom: 0.5;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.weathertable, .weatherforecasttable {
+	width: 100%;
+}
+
+.weather_day {
+  font-family: "LocalRoboto-Thin";
+  font-size: 90%;
+}
+
+.weathertable tr td {
+	width: 33%;
+}
+
+#weathericon_big {
+	float: right; 
+}
+
+#weather_temperature_big {
+	text-align: center;
+}
+
+.widget_weather_temperature_big {
+  font-family: "LocalRoboto-Thin";
+  font-size: 120%;
+}
+
+.widget_weather_text_big {
+	font-size: 45%;
+}
+
+.widget_weather_temperature_small, .widget_weather_text {
+  font-size: 50%;
+}
+
+.widget_weather_temperature_small {
+  font-family: "LocalRoboto-Thin";
+}
+
+.widget_weather_text {
+  font-family: "LocalRoboto-ThinItalic";
+}
+
+.weatherforecasttable {
+	float: right;
+	text-align: right;
+}
+
+.widget_weather_forecast_field {
+	width: 15%;
+	padding-right: 4%;
+	text-align: right;
+}

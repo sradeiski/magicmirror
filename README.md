@@ -1,7 +1,7 @@
 #magicmirror
 
 [![Build Status](https://travis-ci.org/sradeiski/magicmirror.svg?branch=master)](https://travis-ci.org/sradeiski/magicmirror)
-[![Dependency Status]https://david-dm.org/sradeiski/magicmirror.svg]
+![](https://david-dm.org/sradeiski/magicmirror.svg)
 
 
 Node/AngularJS-based RaspberryPi project inspired by this cool project: https://github.com/MichMich/MagicMirror. 

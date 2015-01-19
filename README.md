@@ -1,7 +1,8 @@
 #magicmirror
 
-[![Build Status](https://travis-ci.org/sradeiski/magicmirror.svg?branch=master)](https://travis-ci.org/sradeiski/magicmirror)
-![](https://david-dm.org/sradeiski/magicmirror.svg)
+[![Build Status](https://travis-ci.org/sradeiski/magicmirror.svg?branch=master)](https://travis-ci.org/sradeiski/magicmirror) 
+[![Dependency Status](https://david-dm.org/sradeiski/magicmirror.svg)](https://david-dm.org/sradeiski/magicmirror) 
+[![devDependency Status](https://david-dm.org/sradeiski/magicmirror/dev-status.svg)](https://david-dm.org/sradeiski/magicmirror#info=devDependencies)
 
 
 Node/AngularJS-based RaspberryPi project inspired by this cool project: https://github.com/MichMich/MagicMirror. 

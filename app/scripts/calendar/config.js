@@ -1,12 +1,12 @@
 'use strict';
 
-var calendar;
+var config;
 
 // ========================= //
 // edit calendar config here //
 // ========================= //
-calendar = {};
-
-module.exports = {
-  calendar: calendar
+config = {
+	refreshIntervalInMinutes: 30
 };
+
+module.exports = config;

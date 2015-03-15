@@ -2,4 +2,4 @@
 
 module.exports = angular.module('magicmirror.calendar', [])
 
-  .controller('CalendarController', [ '$interval', require('./CalendarController') ]);
+  .controller('CalendarController', [ '$http', '$interval', require('./CalendarController') ]);

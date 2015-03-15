@@ -9,9 +9,11 @@ Node/AngularJS-based RaspberryPi project inspired by this cool project: https://
 
 This project is in a very rudimentary stage. 
 
-## Planned next steps 
-* Implement 'calendar' module (extract data from ical). 
-* Implement 'news' module (for tech news and world news). 
+## in progress
+* Implement 'calendar' module (extract data from configurable ical url). 
+
+## next steps 
+* Implement 'news' module (with configurable news site). 
 * Integrate this: http://codepen.io/FWeinb/pen/oyACz
 * Styling (css or less?) 
 * Add second HTML page with ability to modify configuration easily. 

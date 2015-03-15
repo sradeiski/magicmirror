@@ -81,6 +81,21 @@
       <!-- ================== qlocktwo start ================== -->
       
       <!-- ================== qlocktwo end ================== -->
+
+
+      <!-- ================== calendar start ================== -->
+      <div id="calendar_box" ng-controller="CalendarController as calendar">
+        <div id="widget_calendar" class="">
+          <table ng-repeat="calendar in calendar.calendar" class="">
+            <tr>
+              <td class="">{{ calendar.time }}</td>
+              <td class="">{{ calendar.duration }}</td>
+              <td class="">{{ calendar.description }}</td>
+            </tr>
+          </table> 
+        </div>
+      </div>
+      <!-- ================== calendar end ================== -->
     </div>
 
     <!-- ============== motivational start =============== -->

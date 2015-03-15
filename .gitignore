@@ -9,3 +9,4 @@ npm-debug.log
 
 #other files
 MagicMirror.txt
+app/scripts/calendar/privateconfig.js

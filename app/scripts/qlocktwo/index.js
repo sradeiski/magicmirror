@@ -12,16 +12,16 @@ Thanks to:
 var language = {};
 
 language['spanish'] = {
-    map :  [["E", "S", "O", "N", "F", "L", "A", "S", "U", "N", "A"],
-			["D", "O", "S", "T", "R", "E", "S", "O", "C", "H", "O"],
-			["C", "U", "A", "T", "R", "O", "C", "I", "N", "C", "O"],
-			["S", "I", "E", "T", "E", "R", "N", "U", "E", "V", "E"],
-			["O", "N", "C", "E", "V", "D", "I", "E", "Z", "F", "G"],
-			["S", "E", "I", "S", "D", "O", "C", "E", "Y", "E", "N"],
-			["P", "U", "N", "T", "O", "G", "M", "E", "N", "O", "S"],
-			["M", "E", "D", "I", "A", "C", "U", "A", "R", "T", "O"],
-			["D", "I", "E", "Z", "L", "V", "E", "I", "N", "T", "E"],
-		    ["V", "E", "I", "N", "T", "I", "C", "I", "N", "C", "O"]],
+    map :  [['E', 'S', 'O', 'N', 'F', 'L', 'A', 'S', 'U', 'N', 'A'],
+			['D', 'O', 'S', 'T', 'R', 'E', 'S', 'O', 'C', 'H', 'O'],
+			['C', 'U', 'A', 'T', 'R', 'O', 'C', 'I', 'N', 'C', 'O'],
+			['S', 'I', 'E', 'T', 'E', 'R', 'N', 'U', 'E', 'V', 'E'],
+			['O', 'N', 'C', 'E', 'V', 'D', 'I', 'E', 'Z', 'F', 'G'],
+			['S', 'E', 'I', 'S', 'D', 'O', 'C', 'E', 'Y', 'E', 'N'],
+			['P', 'U', 'N', 'T', 'O', 'G', 'M', 'E', 'N', 'O', 'S'],
+			['M', 'E', 'D', 'I', 'A', 'C', 'U', 'A', 'R', 'T', 'O'],
+			['D', 'I', 'E', 'Z', 'L', 'V', 'E', 'I', 'N', 'T', 'E'],
+		    ['V', 'E', 'I', 'N', 'T', 'I', 'C', 'I', 'N', 'C', 'O']],
     sentences : {
               start :  { all : [[0,1,3],[0,5,7]], 1 : [[0,0,1], [0, 5, 6]] },
       				end   :  { all : [[5, 9, 10], [6,0,4]] }, 
@@ -59,16 +59,16 @@ language['spanish'] = {
 
 
 language['italian'] = {
-    map :  [["S","O","N","O","E","L","E","H","I","J","K"],
-            ["È","M","L’","U","N","A","S","D","U","E","B"],
-            ["T","R","E","N","O","V","E","O","T","T","O"],
-            ["S","E","T","T","E","C","I","N","Q","U","E"],
-            ["D","O","D","I","C","B","D","I","E","C","I"],
-            ["Q","U","A","T","T","R","O","F","S","E","I"],
-            ["U","N","D","I","C","I","F","M","E","N","O"],
-            ["E","K","U","N","L","Q","U","A","R","T","O"],
-            ["V","E","N","T","I","C","I","N","Q","U","E"],
-            ["D","I","E","C","I","L","M","E","Z","Z","O"]],
+    map :  [['S','O','N','O','E','L','E','H','I','J','K'],
+            ['È','M','L’','U','N','A','S','D','U','E','B'],
+            ['T','R','E','N','O','V','E','O','T','T','O'],
+            ['S','E','T','T','E','C','I','N','Q','U','E'],
+            ['D','O','D','I','C','B','D','I','E','C','I'],
+            ['Q','U','A','T','T','R','O','F','S','E','I'],
+            ['U','N','D','I','C','I','F','M','E','N','O'],
+            ['E','K','U','N','L','Q','U','A','R','T','O'],
+            ['V','E','N','T','I','C','I','N','Q','U','E'],
+            ['D','I','E','C','I','L','M','E','Z','Z','O']],
     sentences : {
               start :  { all : [[0,0,3],[0,5,6]], 1 : [[1,0], [1, 2, 5]] },
               end   : { all : [] }, 
@@ -104,16 +104,16 @@ language['italian'] = {
         }
 };
 language['french'] = {
-    map :  [["I", "I", "C", "E", "S", "T", "G", "H", "U", "N", "E"],
-            ["D", "E", "U", "X", "P", "Q", "T", "R", "O", "I", "S"],
-            ["Q", "U", "A", "T", "R", "E", "C", "D", "S", "I", "X"],
-            ["S", "E", "P", "T", "D", "I", "X", "C", "I", "N", "Q"],
-            ["N", "E", "U", "F", "W", "H", "U", "I", "T", "B", "C"],
-            ["O", "N", "Z", "E", "H", "D", "O", "U", "Z", "E", "O"],
-            ["P", "Q", "R", "S", "T", "H", "E", "U", "R", "E", "S"],
-            ["M", "O", "I", "N", "S", "F", "E", "T", "D", "I", "X"],
-            ["Q", "U", "A", "R", "T", "D", "E", "M", "I", "U", "V"],
-            ["W", "V", "I", "N", "G", "T", "–", "C", "I", "N", "Q"]],
+    map :  [['I', 'I', 'C', 'E', 'S', 'T', 'G', 'H', 'U', 'N', 'E'],
+            ['D', 'E', 'U', 'X', 'P', 'Q', 'T', 'R', 'O', 'I', 'S'],
+            ['Q', 'U', 'A', 'T', 'R', 'E', 'C', 'D', 'S', 'I', 'X'],
+            ['S', 'E', 'P', 'T', 'D', 'I', 'X', 'C', 'I', 'N', 'Q'],
+            ['N', 'E', 'U', 'F', 'W', 'H', 'U', 'I', 'T', 'B', 'C'],
+            ['O', 'N', 'Z', 'E', 'H', 'D', 'O', 'U', 'Z', 'E', 'O'],
+            ['P', 'Q', 'R', 'S', 'T', 'H', 'E', 'U', 'R', 'E', 'S'],
+            ['M', 'O', 'I', 'N', 'S', 'F', 'E', 'T', 'D', 'I', 'X'],
+            ['Q', 'U', 'A', 'R', 'T', 'D', 'E', 'M', 'I', 'U', 'V'],
+            ['W', 'V', 'I', 'N', 'G', 'T', '–', 'C', 'I', 'N', 'Q']],
     sentences : {
     		  start :  { all : [[0,0,1],[0,3,5]]},
           end   : { all : [[6,5,9]] }, 
@@ -150,16 +150,16 @@ language['french'] = {
 };
 
 language['english'] = {
-    map :  [["I","T","L","I","S","B","F","A","M","P","M"],
-            ["A","C","Q","U","A","R","T","E","R","D","C"],
-            ["T","W","E","N","T","Y","F","I","V","E","X"],
-            ["H","A","L","F","B","T","E","N","F","T","O"],
-            ["P","A","S","T","E","R","U","N","I","N","E"],
-            ["O","N","E","S","I","X","T","H","R","E","E"],
-            ["F","O","U","R","F","I","V","E","T","W","O"],
-            ["E","I","G","H","T","E","L","E","V","E","N"],
-            ["S","E","V","E","N","T","W","E","L","V","E"],
-            ["T","E","N","S","E","O'","C","L","O","C","K"]],
+    map :  [['I','T','L','I','S','B','F','A','M','P','M'],
+            ['A','C','Q','U','A','R','T','E','R','D','C'],
+            ['T','W','E','N','T','Y','F','I','V','E','X'],
+            ['H','A','L','F','B','T','E','N','F','T','O'],
+            ['P','A','S','T','E','R','U','N','I','N','E'],
+            ['O','N','E','S','I','X','T','H','R','E','E'],
+            ['F','O','U','R','F','I','V','E','T','W','O'],
+            ['E','I','G','H','T','E','L','E','V','E','N'],
+            ['S','E','V','E','N','T','W','E','L','V','E'],
+            ['T','E','N','S','E','O','C','L','O','C','K']],
     sentences : {
         start :  { all : [[0,0,1],[0,3,4]]},
         end   :  { all : [[9,5,10]] }, 
@@ -196,16 +196,16 @@ language['english'] = {
 };
 
 language['german'] = {
-  map : [["E","S","M","I","S","T","E","F","Ü","N","F"],
-        ["Z","E","H","N","Z","W","A","N","Z","I","G"],
-        ["N","A","C","H","V","I","E","R","T","E","L"],
-        ["V","O","R","N","A","C","H","H","A","L","B"],
-        ["E","I","N","S","I","N","K","Z","W","E","I"],
-        ["D","R","E","I","E","A","N","V","I","E","R"],
-        ["F","Ü","N","F","N","I","S","E","C","H","S"],
-        ["S","I","E","B","E","N","I","A","C","H","T"],
-        ["N","E","U","N","Z","E","H","N","E","L","F"],
-        ["Z","W","Ö","L","F","K","A","B","U","H","R"]],
+  map : [['E','S','M','I','S','T','E','F','Ü','N','F'],
+        ['Z','E','H','N','Z','W','A','N','Z','I','G'],
+        ['N','A','C','H','V','I','E','R','T','E','L'],
+        ['V','O','R','N','A','C','H','H','A','L','B'],
+        ['E','I','N','S','I','N','K','Z','W','E','I'],
+        ['D','R','E','I','E','A','N','V','I','E','R'],
+        ['F','Ü','N','F','N','I','S','E','C','H','S'],
+        ['S','I','E','B','E','N','I','A','C','H','T'],
+        ['N','E','U','N','Z','E','H','N','E','L','F'],
+        ['Z','W','Ö','L','F','K','A','B','U','H','R']],
   sentences : {
       start : { all :[[0,0,1], [0,3,5]] },
       end   : { all : [[9,8,10]] },
@@ -300,14 +300,14 @@ var wordClock = {
   
   buildLetters : function(){
     //Clear Letters
-    this.letters.innerHTML = "";
+    this.letters.innerHTML = '';
     
     // Create 2D Array to store the span elements.
     this.letterMap = [];
     for (var i=0;i<this.language.map.length;i++){
       this.letterMap.push([]);
     }
-    //"Draw" Letters
+    //'Draw' Letters
     for (var x=0;x<this.language.map.length;x++){
        for (var y=0;y<this.language.map[x].length;y++){
             var span = document.createElement('span');     
@@ -320,9 +320,10 @@ var wordClock = {
   },
   
   
-  showText: function(){
-    if (this.state !== 0)
+  showText: function() {
+    if (this.state !== 0) {
       return;
+    }
     
     // Hide last Sentence
     this.hideLetters(this.prevSentence);
@@ -383,10 +384,11 @@ var wordClock = {
     setTimeout(function(){that.showMinutes();}, (60-this.getSeconds())*1000 - this.getMilliseconds());
   },
   
-  showSeconds : function(){
-      if (this.state != 1)
+  showSeconds : function() {
+      if (this.state !== 1) {
          return;
-    
+      }
+
       var seconds = this.getSeconds();
     
       this.hideNumber(this.prevSecond);       
@@ -413,23 +415,23 @@ var wordClock = {
       return  (new Date()).getMilliseconds(); 
   },
   hideNumber : function(number){  
-          if (number === undefined || number === null) return;
+          if (number === undefined || number === null) { return }
           var tens = this.seconds[~~(number/10)];
           var ones = this.seconds[(number % 10)];         
-          this.changeClassLetters(tens, "", 0);
-          this.changeClassLetters(ones, "", 6);
+          this.changeClassLetters(tens, '', 0);
+          this.changeClassLetters(ones, '', 6);
   },
   showNumber : function(number){  
-        tens = this.seconds[~~(number/10)];
-        ones = this.seconds[(number % 10)];
-        this.changeClassLetters(tens, "light", 0);
-        this.changeClassLetters(ones, "light", 6);
+        var tens = this.seconds[~~(number/10)];
+        var ones = this.seconds[(number % 10)];
+        this.changeClassLetters(tens, 'light', 0);
+        this.changeClassLetters(ones, 'light', 6);
   },
   hideLetters : function(la){      
-      this.changeClassLetters(la, "", 0);
+      this.changeClassLetters(la, '', 0);
   },
   showLetters : function(la){
-      this.changeClassLetters(la, "light", 0);
+      this.changeClassLetters(la, 'light', 0);
   },
   hideMinutesDot : function(count){
     this.changeClassMinutes(count, '');
@@ -455,12 +457,12 @@ var wordClock = {
   },
   changeClassMinutes : function(count, value){
       for (var i=0;i<count;i++){          
-          document.getElementById("e"+i).className = value;
+          document.getElementById('e'+i).className = value;
       }          
   },
   _inArray : function(arr, obj){
     for (var i=0;i<arr.length;i++){
-      if (arr[i] == obj) return true;
+      if (arr[i] === obj) { return true }
     }
     return false;
   }
@@ -469,12 +471,12 @@ var wordClock = {
 wordClock.init(language['english']);
 
 $('#settings a').on('click', function(e){
-  if (e.target.id === "state"){
+  if (e.target.id === 'state'){
       wordClock.switchState();
       if (wordClock.state){
-          $(e.target).html("show text");
+          $(e.target).html('show text');
       }else{
-          $(e.target).html("show seconds");      
+          $(e.target).html('show seconds');      
       }
   }else{
       wordClock.init(language[e.target.id]);
@@ -482,12 +484,12 @@ $('#settings a').on('click', function(e){
   e.preventDefault();
 });
 
-var clock = $("#clock");
-var buttons = $("#settings .button");
+var clock = $('#clock');
+var buttons = $('#settings .button');
 
-$('#settings').on("click", ".button", function(e){
+$('#settings').on('click', '.button', function(e){
   var target = $(e.target);
-  buttons.removeClass("selected");
-  target.toggleClass("selected");
-  clock.css({backgroundColor:    target.css("backgroundColor")});
+  buttons.removeClass('selected');
+  target.toggleClass('selected');
+  clock.css({backgroundColor:    target.css('backgroundColor')});
 });

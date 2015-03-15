@@ -4,7 +4,7 @@ var weatherService = require('./WeatherService');
 
 var dateformat = require('dateformat');
 
-var WeatherController = function ($http) {
+var WeatherController = function ($http, $interval) {
   var copyTodaysWeatherToScope,
       copyWeatherForecastToScope,
       getFormattedTime,
@@ -45,6 +45,11 @@ var WeatherController = function ($http) {
 
   weatherService.getWeatherToday($http).then(copyTodaysWeatherToScope);
   weatherService.getWeatherForecast($http).then(copyWeatherForecastToScope);
+
+  $interval(function () {
+    weatherService.getWeatherToday($http).then(copyTodaysWeatherToScope);
+    weatherService.getWeatherForecast($http).then(copyWeatherForecastToScope);
+  }, that.config.refreshIntervalInMinutes * 60 * 1000);
 };
 
 module.exports = WeatherController;

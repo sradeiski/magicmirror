@@ -7,12 +7,13 @@ var motivational = {
   entries: [
     'You look great, today!',
     'Be bold.',
-    '123',
+    'Break things to make them better.',
     'asdasd',
     'aoisdjadoij',
     'sadf asdosdn adsasd',
     '823jis'
-  ]
+  ],
+  refreshIntervalInHours: 12
 };
 
 module.exports = motivational;

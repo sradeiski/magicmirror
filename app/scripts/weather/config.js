@@ -4,6 +4,7 @@
 // edit weather config here //
 // ======================== //
 var config = {
+  refreshIntervalInMinutes: 30,
   today: {
     url: 'http://api.openweathermap.org/data/2.5/weather',
     params: {

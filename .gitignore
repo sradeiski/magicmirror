@@ -1,6 +1,8 @@
 #generated folders
 node_modules
-build
+dist
+.tmp
+bower_components
 
 #generated files
 npm-debug.log

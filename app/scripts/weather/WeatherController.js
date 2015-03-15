@@ -5,7 +5,9 @@ var weatherService = require('./WeatherService');
 var dateformat = require('dateformat');
 
 var WeatherController = function ($http) {
-  var getFormattedTime,
+  var copyTodaysWeatherToScope,
+      copyWeatherForecastToScope,
+      getFormattedTime,
       that = this;
 
   that.config = weatherService.config;
@@ -14,7 +16,7 @@ var WeatherController = function ($http) {
     return dateformat(timestamp * 1000, that.config.timeFormat);
   };
 
-  weatherService.getWeatherToday($http).then(function (todaysWeather) {
+  copyTodaysWeatherToScope = function (todaysWeather) {
     that.today = {};
     that.today.description = todaysWeather.weather[0].description;
     that.today.icon = that.config.iconMap[todaysWeather.weather[0].icon];
@@ -23,9 +25,9 @@ var WeatherController = function ($http) {
     that.today.tempMax = Math.round(todaysWeather.main.temp_max);
     that.today.tempMin = Math.round(todaysWeather.main.temp_min);
     that.today.windspeed = todaysWeather.wind.speed;
-  });
+  };
 
-  weatherService.getWeatherForecast($http).then(function (weatherForecast) {
+  copyWeatherForecastToScope = function (weatherForecast) {
     var i;
 
     that.forecast = [];
@@ -39,7 +41,10 @@ var WeatherController = function ($http) {
       that.forecast[i].temperatureHigh = Math.round(weatherForecast.list[i].temp.max);
       that.forecast[i].description = weatherForecast.list[i].weather[0].description;
     }
-  });
+  };
+
+  weatherService.getWeatherToday($http).then(copyTodaysWeatherToScope);
+  weatherService.getWeatherForecast($http).then(copyWeatherForecastToScope);
 };
 
 module.exports = WeatherController;

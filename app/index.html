@@ -1,16 +1,30 @@
 <!doctype html>
-<html>
+<html class="no-js">
   <head>
     <meta charset="utf-8">
     <title>Magic Mirror</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" type="text/css" href="app/styles/calendar.css">
     <link rel="stylesheet" type="text/css" href="app/styles/clock.css">
     <link rel="stylesheet" type="text/css" href="app/styles/main.css">
     <link rel="stylesheet" type="text/css" href="app/styles/news.css">
+    <link rel="stylesheet" type="text/css" href="app/styles/qlocktwo.css">
     <link rel="stylesheet" type="text/css" href="app/styles/weather.css">
     <link rel="stylesheet" type="text/css" href="app/styles/weather-icons.css">
+    <!-- endbuild -->
   </head>
   <body ng-app="magicmirror">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
     <!-- float left -->
     <div class="width_box left">
       <!-- ================== clock start ================== -->
@@ -67,7 +81,17 @@
     <div id="widget_motivation" class="widget_align_bottom_center" ng-controller="MotivationalController as motivational">{{ motivational.motivational }}</div>
     <!-- ============== motivational end =============== -->
 
-    <script src="node_modules/angular/angular.js"></script>
-    <script src="build/build.js"></script>
-  </body>
+    <div ng-view=""></div>
+    </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/browserify.js"></script>
+        <!-- endbuild -->
+</body>
 </html>

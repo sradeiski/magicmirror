@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+* { box-sizing: border-box; }
+
+#qlocktwo-wrapper {
+  font-family:'Josefin Sans', Arial, "Trebuchet MS", sans-serif;
+  background-color:black;
+}
+
+#qlocktwo-clock{
+  position:relative;
+  display:block;
+  color:#000;
+  font-size:30px;
+  background: rgb(0,0,139);
+  background: rgb(0,0,139) linear-gradient(140deg, rgba(0,0,0,0) 50%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.0) 100%);
+  width:550px;
+  padding:70px;
+  margin:0 auto;
+  transition:background-color 0.5s linear;
+}
+
+#qlocktwo-letters, #qlocktwo-letters span{
+   display:inline-block;
+   line-height:41px;
+   text-align:center;
+   transition:all 0.5s linear;
+}
+#qlocktwo-letters span{
+    width:35px;
+}
+
+
+.qlocktwo-light{
+  color:#fff !important;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+/* dots in the edge for showing the minutes */
+#e0,#e1,#e2,#e3{ 
+    position:absolute;
+    color:black;    
+    font-size:15px;
+}
+
+#e0, #e1{
+  top:15px;
+}
+#e2, #e1{
+  right:25px;
+}
+#e0, #e3{
+  left:25px;
+}
+#e2, #e3{
+  bottom:20px;
+}

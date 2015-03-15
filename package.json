@@ -1,6 +1,6 @@
 {
   "name": "magicmirror",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "dependencies": {
     "dateformat": "1.0.11"
   },

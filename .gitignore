@@ -3,6 +3,7 @@ node_modules
 dist
 .tmp
 bower_components
+nodeserver/node_modules
 
 #generated files
 npm-debug.log

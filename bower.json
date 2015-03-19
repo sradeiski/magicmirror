@@ -1,6 +1,6 @@
 {
   "name": "magicmirror",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "dependencies": {
     "angular": "~1.3.14"
   },

@@ -22,7 +22,7 @@ getWeatherToday = function ($http) {
     params: {
       lang: config.today.params.lang,
       mode: config.today.params.mode,
-      q: config.today.params.cityAndCountry,
+      cityAndCountry: config.today.params.cityAndCountry,
       units: config.today.params.units
     },
     url: config.today.url
@@ -37,7 +37,7 @@ getWeatherForecast = function ($http) {
     params: {
       lang: config.forecast.params.lang,
       mode: config.forecast.params.mode,
-      q: config.forecast.params.cityAndCountry,
+      cityAndCountry: config.forecast.params.cityAndCountry,
       units: config.forecast.params.units
     },
     url: config.forecast.url

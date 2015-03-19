@@ -16,7 +16,7 @@ var CalendarController = function ($http, $interval) {
 
 		//MOCK
 		calendarData = {};
-		calendarData.cnt = 4;
+		calendarData.cnt = 5;
 
 		that.calendar = [];
 
@@ -28,7 +28,7 @@ var CalendarController = function ($http, $interval) {
 		}
 	};
 
-  calendarService.getCalendarData($http).then(copyCalendarDataToScope);
+  calendarService.getCalendarData($http, config.calendarIds[0]).then(copyCalendarDataToScope);
 
   $interval(function () {
   calendarService.getCalendarData($http).then(copyCalendarDataToScope);

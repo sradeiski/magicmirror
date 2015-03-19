@@ -1,5 +1,6 @@
 'use strict';
 
+var config = require('./config');
 var privateConfig = require('./privateconfig');
 
 var getCalendarData,
@@ -16,10 +17,13 @@ handleSuccess = function (response) {
   return response.data;
 };
 
-getCalendarData = function ($http) {
+getCalendarData = function ($http, calendarId) {
   var requestCalendarData = $http({
     method: 'get',
-    url: privateConfig.calendarUrls['bash']
+    params: {
+      ical: privateConfig.calendarUrls[calendarId]
+    },
+    url: config.serviceUrl
   });
 
   return requestCalendarData.then(handleSuccess, handleError);

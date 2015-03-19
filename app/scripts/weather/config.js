@@ -6,7 +6,7 @@
 var config = {
   refreshIntervalInMinutes: 30,
   today: {
-    url: 'http://api.openweathermap.org/data/2.5/weather',
+    url: 'http://localhost:3000/weather/today',
     params: {
       cityAndCountry: 'Stuttgart,de',
       units: 'metric',
@@ -15,7 +15,7 @@ var config = {
     }
   },
   forecast: {
-    url: 'http://api.openweathermap.org/data/2.5/forecast/daily',
+    url: 'http://localhost:3000/weather/forecast',
     params: {
       cityAndCountry: 'Stuttgart,de',
       units: 'metric',

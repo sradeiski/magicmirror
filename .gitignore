@@ -4,6 +4,7 @@ dist
 .tmp
 bower_components
 nodeserver/node_modules
+nodeserver/public
 
 #generated files
 npm-debug.log

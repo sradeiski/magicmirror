@@ -29,7 +29,7 @@ router.get('/today', function(req, res, next) {
       res.set('Content-Type', response.headers['content-type']).send(body);
     } else {
       console.log(error);
-      res.statusCode(response.statusCode).send(error);
+      res.status(response.statusCode).send(error);
     }
   });
 });
@@ -64,7 +64,7 @@ router.get('/forecast', function(req, res, next) {
       res.set('Content-Type', response.headers['content-type']).send(body);
     } else {
       console.log(error);
-      res.statusCode(response.statusCode).send(error);
+      res.status(response.statusCode).send(error);
     }
   });
 });

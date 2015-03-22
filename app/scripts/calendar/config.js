@@ -10,7 +10,8 @@ config = {
     'bash'
   ],
 	refreshIntervalInMinutes: 30,
-  serviceUrl: 'http://localhost:3000/calendar/google'
+  serviceUrl: '../calendar/google'
 };
+// http://localhost:3000/calendar/google
 
 module.exports = config;

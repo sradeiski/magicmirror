@@ -6,7 +6,7 @@
 var config = {
   refreshIntervalInMinutes: 30,
   today: {
-    url: 'http://localhost:3000/weather/today',
+    url: '../weather/today',
     params: {
       cityAndCountry: 'Stuttgart,de',
       units: 'metric',
@@ -15,7 +15,7 @@ var config = {
     }
   },
   forecast: {
-    url: 'http://localhost:3000/weather/forecast',
+    url: '../weather/forecast',
     params: {
       cityAndCountry: 'Stuttgart,de',
       units: 'metric',

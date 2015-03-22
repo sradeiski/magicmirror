@@ -13,14 +13,17 @@ This project is currently under development.
 * Implementing server-side 'calendar' module (with configurable ical url) which returns configurable event metadata sets. (Module responds with the ical file, at the moment.)
 
 ## next steps 
+* Fix build task to properly include CSS files in dist.
 * Change setup so the node server already includes the client application in the base route.
 * Finish client-side news module.
 * Finish client-side calendar module.
 * Finish styling 
 * Edit motivational lines to some that make sense. (Maybe there is a service out there?)
+* Set up small sample mirror on my webspace to show the mirror in action. 
+* Write documentation on how to configure the mirror.
 * Integrate this: http://codepen.io/FWeinb/pen/oyACz
 * Add second HTML page with ability to modify configuration easily and on-the-fly. 
-* (Maybe in separate project) Add music player module for magic mirrors with speakers - including another HTML page for controlling music playback. 
+* (Maybe in separate project) Add music player module for magic mirrors with speakers - including another (responsive design) HTML page for controlling music playback. 
 
 ## Log
 

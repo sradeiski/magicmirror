@@ -13,7 +13,6 @@ This project is currently under development.
 * Implementing server-side 'calendar' module (with configurable ical url) which returns configurable event metadata sets. (Module responds with the ical file, at the moment.)
 
 ## next steps 
-* Fix build task to properly include CSS files in dist.
 * Change setup so the node server already includes the client application in the base route.
 * Finish client-side news module.
 * Finish client-side calendar module.

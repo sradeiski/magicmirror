@@ -1,6 +1,6 @@
 /* calendar style definition */
 
-#widget_calendar_today {
+.widget_calendar {
 	margin-top: 20px;
 }
 
@@ -15,5 +15,5 @@
 
 .widget_calendar_event {
   font-family: "LocalRoboto-ThinItalic";
-  font-size: 40%;
+  font-size: 60%;
 }

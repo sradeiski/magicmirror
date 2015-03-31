@@ -1,10 +1,6 @@
 /* news style definition */
 
-#widget_news_world {
-  margin-top: 20px;	
-}
-
-#widget_news_developer {
+.widget_news {
   margin-top: 20px;	
 }
 
@@ -17,6 +13,7 @@
   padding-bottom: 7px;
 }
 .widget_news_item {
-  font-family: "LocalRoboto-Thin";
-  font-size: 40%;
+  font-family: "LocalRoboto-Regular";
+  font-size: 55%;
+  padding-bottom: 5px;
 }

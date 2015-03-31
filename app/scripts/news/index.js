@@ -2,4 +2,4 @@
 
 module.exports = angular.module('magicmirror.news', [])
 
-  .controller('NewsController', [ '$interval', require('./NewsController') ]);
+  .controller('NewsController', [ '$http', '$interval', require('./NewsController') ]);

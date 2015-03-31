@@ -8,7 +8,6 @@ router.get('/google', function(req, res, next) {
 
   //read url from request
   icalUrl = req.query.ical;
-  console.log(icalUrl);
 
   //make request to get ical file
   request(icalUrl, function (error, response, body) {

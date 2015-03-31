@@ -1,19 +1,19 @@
 'use strict';
 
-var news;
+var config;
 
 // ===================== //
 // edit news config here //
 // ===================== //
-news = {
+config = {
+  numberOfItemsToRetrieve: 5,
+  refreshIntervalInMinutes: 30,
   tech: {
-    url: ''
+    url: '../news/engadget.com'
   },
   world: {
-    url: ''
+    url: '../news/reuters/world'
   }
 };
 
-module.exports = {
-  news: news
-};
+module.exports = config;

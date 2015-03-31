@@ -25,7 +25,7 @@
     <![endif]-->
 
     <!-- float left -->
-    <div class="width_box left">
+    <div class="width_box_left left">
       <!-- ================== clock start ================== -->
       <!-- clock -->
       <!-- ================== clock start ================== -->
@@ -77,25 +77,45 @@
     </div>
     
     <!-- float right -->
-    <div class="width_box right">
+    <div class="width_box_right right">
       <!-- ================== qlocktwo start ================== -->
       
       <!-- ================== qlocktwo end ================== -->
 
-
       <!-- ================== calendar start ================== -->
       <div id="calendar_box" ng-controller="CalendarController as calendar">
-        <div id="widget_calendar" class="">
-          <table ng-repeat="calendar in calendar.calendar" class="">
+        <div id="widget_calendar" class="widget_calendar">
+          <table ng-repeat="calendar in calendar.calendar" class="widget_calendar_table">
             <tr>
-              <td class="">{{ calendar.time }}</td>
-              <td class="">{{ calendar.duration }}</td>
-              <td class="">{{ calendar.description }}</td>
+              <td class="widget_calendar_event">{{ calendar.time }}</td>
+              <td class="widget_calendar_event">{{ calendar.duration }}</td>
+              <td class="widget_calendar_event">{{ calendar.description }}</td>
             </tr>
           </table> 
         </div>
       </div>
       <!-- ================== calendar end ================== -->
+
+      <!-- ================== news start ================== -->
+      <div id="news_box" ng-controller="NewsController as news">
+        <div id="widget_technews" class="widget_news">
+          <div class="widget_news_title">tech.news</div>
+          <table ng-repeat="newsItem in news.techNews" class="">
+            <tr>
+              <td class="widget_news_item">{{ newsItem }}</td>
+            </tr>
+          </table> 
+        </div>
+        <div id="widget_worldnews" class="widget_news">
+          <div class="widget_news_title">world.news</div>
+          <table ng-repeat="newsItem in news.worldNews" class="">
+            <tr>
+              <td class="widget_news_item">{{ newsItem }}</td>
+            </tr>
+          </table> 
+        </div>
+      </div>
+      <!-- ================== news end ================== -->
     </div>
 
     <!-- ============== motivational start =============== -->

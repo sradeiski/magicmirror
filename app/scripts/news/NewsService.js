@@ -9,6 +9,7 @@ var getTechNews,
 
 handleError = function (response) {
   // TO DO ERROR HANDLING
+  console.log(response);
   return response;
 };
 
@@ -16,11 +17,32 @@ handleSuccess = function (response) {
   return response.data;
 };
 
-getTechNews = function ($http) {};
+getTechNews = function ($http) {
+  var requestNewsData = $http({
+    method: 'get',
+    params: {
+      numberOfItems: config.numberOfItemsToRetrieve
+    },
+    url: config.tech.url
+  });
 
-getWorldNews = function ($http) {};
+  return requestNewsData.then(handleSuccess, handleError);
+};
+
+getWorldNews = function ($http) {
+  var requestNewsData = $http({
+    method: 'get',
+    params: {
+      numberOfItems: config.numberOfItemsToRetrieve
+    },
+    url: config.world.url
+  });
+
+  return requestNewsData.then(handleSuccess, handleError);
+};
 
 module.exports = {
+  config: config,
   getTechNews: getTechNews,
   getWorldNews: getWorldNews
 };

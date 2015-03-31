@@ -37,8 +37,13 @@ body, html {
 
 /* === widget positions === */
 
-.width_box {
-  width: 30%;
+.width_box_left {
+  width: 25%;
+}
+
+.width_box_right {
+  width: 35%;
+  margin-top: 65px;
 }
 
 .left {

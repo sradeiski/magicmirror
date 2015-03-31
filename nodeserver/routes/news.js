@@ -4,7 +4,7 @@ var FeedParser = require('feedparser');
 var iconvLite = require('iconv-lite');
 var request = require('request');
 
-var readFeed = function (url, response) {
+var readFeed = function (url, response, limit) {
   var feedRequest,
       feedParser,
       getParams,
@@ -19,6 +19,7 @@ var readFeed = function (url, response) {
   feedParser = new FeedParser();
 
   headlines = [];
+  limit = limit - 0; //convert string to number
 
   handleRequestError = function (error) {
     //TODO ... 
@@ -95,34 +96,41 @@ var readFeed = function (url, response) {
         item;
 
     while (item = stream.read()) {
-      headlines.push(item.title);
+      if(headlines.length <= limit) {
+         headlines.push(item.title);
+      }
     }
   });
 };
 
 /* GET engadget US news */
 router.get('/engadget.com', function(req, res, next) {
-  readFeed('http://www.engadget.com/rss.xml', res);
+  readFeed('http://www.engadget.com/rss.xml', res, req.query.numberOfItems);
 });
 
 /* GET golem news */
 router.get('/golem', function(req, res, next) {
-  readFeed('http://rss.golem.de/rss.php?feed=ATOM2.0', res);
+  readFeed('http://rss.golem.de/rss.php?feed=ATOM2.0', res, req.query.numberOfItems);
 });
 
 /* GET techcrunch news */
 router.get('/techcrunch/all', function(req, res, next) {
-  readFeed('http://feeds.feedburner.com/TechCrunch', res);
+  readFeed('http://feeds.feedburner.com/TechCrunch', res, req.query.numberOfItems);
 });
 
 /* GET techcrunch news */
 router.get('/techcrunch/mobile', function(req, res, next) {
-  readFeed('http://feeds.feedburner.com/Mobilecrunch', res);
+  readFeed('http://feeds.feedburner.com/Mobilecrunch', res, req.query.numberOfItems);
+});
+
+/* GET reuters world news */
+router.get('/reuters/world', function(req, res, next) {
+  readFeed('http://feeds.reuters.com/Reuters/worldNews?format=xml', res, req.query.numberOfItems);
 });
 
 /* GET custom news, feed url in query param 'feedUrl' */
 router.get('/custom', function(req, res, next) {
-  readFeed(req.query.feedUrl, res);
+  readFeed(req.query.feedUrl, res, req.query.numberOfItems);
 });
 
 module.exports = router;

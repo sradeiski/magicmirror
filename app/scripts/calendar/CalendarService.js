@@ -13,8 +13,7 @@ handleError = function (response) {
 };
 
 handleSuccess = function (response) {
-	console.log(response);
-  return response.data;
+	return response.data;
 };
 
 getCalendarData = function ($http, calendarId) {

@@ -128,6 +128,11 @@ router.get('/reuters/world', function(req, res, next) {
   readFeed('http://feeds.reuters.com/Reuters/worldNews?format=xml', res, req.query.numberOfItems);
 });
 
+/* GET BVB team news from kicker.de */
+router.get('/kicker/bvb', function(req, res, next) {
+  readFeed('http://rss.kicker.de/team/borussiadortmund', res, req.query.numberOfItems);
+});
+
 /* GET custom news, feed url in query param 'feedUrl' */
 router.get('/custom', function(req, res, next) {
   readFeed(req.query.feedUrl, res, req.query.numberOfItems);
